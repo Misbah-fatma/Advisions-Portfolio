@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.price {
+  font-size: 1.25rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #007bff; /* Primary color or adjust to your design */
+  margin-top: 1rem;
+}
+
+.card .card-body a {
+  margin-top: auto; /* Pushes the link to the bottom of the card */
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Adjust if you have a specific height in mind */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-wrap {
+  height: 500px; /* Set the height to 500px */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  position: relative; /* Required for overlay positioning */
+}
+.overlay {
+  /* Ensure the overlay covers the entire hero section */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Adjust the opacity and color of the overlay */
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+
+.container {
+  position: relative;
+  z-index: 2; /* Ensure the content is above the overlay */
+  height: 100%; /* Make sure container takes up full height of hero section */
+  display: flex;
+  align-items: flex-end; /* Ensure the content is above the overlay */
+}
+
+.hero-wrap .breadcrumbs {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between breadcrumb and heading */
+  vertical-align: middle;
+}
+
+.hero-wrap h2.bread {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0; /* Adjust if needed */
+  font-size: 50px; /* Adjust to match the design */
+}
+
